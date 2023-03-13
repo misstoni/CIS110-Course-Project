@@ -4,14 +4,14 @@ print(f"To begin, I would like to ask you, wonderful person a few questions to g
 print(f"Please press the enter key after answering the questions or we won't able to start the story time!")
 
 startOver = "yes"
-while startOver.lower() =="yes":
+while startOver.lower() == "yes":
 
 
     
 #questions for you :)
 
 #Question 1
-    catPersonality =  input(f"\nWhat is the cat's personality?:  ")
+    catPersonality = input(f"\nWhat is the cat's personality?:  ")
     while len(catPersonality) == 0:
          catPersonality = input(f"Oops! Please enter personality, it is important for the story!:  ")
 
@@ -26,22 +26,22 @@ while startOver.lower() =="yes":
         catBreed = input(f"Oops! Please enter cat's coat color, it is important for the story!:  ")
 
 #Question 4
-    catAge = input("Is Mordecai old or young:  ")
+    catAge = input(f"\nIs Mordecai old or young:  ")
     while len(catAge) == 0:
         catAge = input(f"Oops! Please enter cat's age, it is important for the story!:   ")
 
 #Question 5
-    catSize = input("Is Mordecai chonk or smol?:  ")
+    catSize = input(f"\nIs Mordecai chonky or smol?:  ")
     while len(catSize) == 0:
         catSize = input(f"Oops! Please enter cat's size, it is important for the story!:   ")
 
 
 
 #Story begins!
-    print("Alright! Let's start the story!")
-    print(f"\n One day a very {catPersonality}, {catAge} , {catSize} cat named Mordecai was waking up from his nap in {homeRoom} ")
+    print(f"\nAlright! Let's start the story!")
+    print(f"\nOne day a very {catPersonality}, {catAge}, and {catSize} {catCoatcolor} cat named Mordecai was waking up from his nap in {homeRoom}")
     print("When he opened his eyes, they were the most piercing blue color you'd ever seen!")
-    print("He realizes that is so hungry and hadn't eaten in hours! So, he heads to the kitchen hoping to eat something delicious.")
+    print("He realizes that he is so hungry and hadn't eaten in hours! So, he heads to the kitchen hoping to eat something delicious.")
     print("Oh no his bowl is empty!!")
 
 #Decision 1 Mordecai must cause chaos!
@@ -74,11 +74,9 @@ while startOver.lower() =="yes":
         print(f"\nMordecai is very sad no one heard his cries for food. Everyone was ignoring him or didn't hear him at all. So he decideds to lay down next to his bowl. He stays by his bowl forever, hopefully someone will come to the kitchen soon so he can show them that his bowl is empty.")
     else: 
         print(f"\nOh wow! Mordecai's human comes to the rescue to provide him with delicious food! He eats his food and then goes to his human's bedroom to sleep off his reward.")
-        print("The End!")
-
-    
+    print(f"\nHurray our story is now complete! Thank you for your help!")
         
-        
-        
-        
-        startOver = input(f"\n Would you like to play again? Type in yes or no, please :):   ")
+    startOver = input(f"\nWould you like to play again? Type in yes or no, please :):    ")
+    while startOver.lower() != "yes" and startOver.lower() != "no": 
+        startOver = input(f"\nOops! Please type in yes or no:    ")
+           
